@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Sticky Footer Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .input{
+        margin:0px;
+      }
+    </style>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5">Mars Rovers Movements</h1>
+    <p class="lead">Mars Rovers Movement Simulation Program</p>
+    <h2>Example İnput: </h2>
+    <p class="input">5 5</p>
+    <p class="input">1 2 N</p>
+    <p class="input">LMLMLLMMM</p>
+    <p class="input mt-3">3 3 E</p>
+    <p class="input">MMRMMRMRRM</p>
+
+    <hr>
+    <h1 class="mt-2">Input :</h1>
+
+    <form class="col-md-6 mt-3">
+        <div class="mb-3 col-md-3">
+          <label for="exampleInputEmail1" class="form-label">Plato Range :</label>
+          <input type="text" class="form-control" placeholder="5 5" id="platoRange">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Rover :</label> <label id="roverNumber"> 1</label>
+            <input type="text" class="form-control" placeholder="1 2 N" id="roverStartPosition">
+            <input type="text" class="form-control mt-1" placeholder="LMLMLMLMM" id="roverMovements">
+        </div>
+        <button type="button" onclick="roverStart();" class="btn btn-primary" id="roverSend">Move Rover 1</button>
+      </form>
+    <div class="row">
+        <h1 class="mt-2">Output :</h1> 
+        <p id="roverCordinates"></p>       
+    </div>
+  </div>
+
+  
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Berkay Karadeniz</span>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
+
+<script>
+    testCase(1);
+</script>
