@@ -1,4 +1,6 @@
 
+var roverNewX, roverNewY, roverDirection;
+
 function roverStart(){
 
     if ((document.getElementById('platoRange').value.length > 0) && (document.getElementById('roverStartPosition').value.length > 0) && (document.getElementById('roverMovements').value.length > 0))
@@ -17,10 +19,10 @@ function roverStart(){
 
         var roverX = roverStartPositionArray[0];
         var roverY = roverStartPositionArray[1];
-        var roverDirection = roverStartPositionArray[2];
+        roverDirection = roverStartPositionArray[2];
 
-        var roverNewX = parseInt(roverX);
-        var roverNewY = parseInt(roverY);
+        roverNewX = parseInt(roverX);
+        roverNewY = parseInt(roverY);
         var message = "";
         var direction;
         roverMovementsArray.forEach(movement => {
@@ -76,9 +78,9 @@ function roverMove(roverDirection){
             break;    
     }
 }
-function roverRight(roverDirection)
+function roverRight(Direction)
 {
-    switch(roverDirection)
+    switch(Direction)
     {   
         case "N":
             roverDirection = "E";
@@ -94,9 +96,9 @@ function roverRight(roverDirection)
             break;    
     }  
 }
-function roverLeft(roverDirection)
+function roverLeft(Direction)
 {
-    switch(roverDirection)
+    switch(Direction)
     {   
         case "N":
             roverDirection = "W";
